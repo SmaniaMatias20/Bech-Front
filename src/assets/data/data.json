@@ -1,0 +1,42 @@
+{
+    "table1": [
+        {
+            "incidentId": "INC001",
+            "description": "Fugas en sistema de lubricación",
+            "reportedDate": "2025-01-01",
+            "status": "Abierto"
+        },
+        {
+            "incidentId": "INC002",
+            "description": "Nivel bajo de lubricante",
+            "reportedDate": "2025-01-05",
+            "status": "Cerrado"
+        }
+    ],
+    "table2": [
+        {
+            "task": "Reemplazo de filtros de aceite",
+            "deadline": "2025-02-01",
+            "progress": "50%",
+            "priority": "Alta"
+        },
+        {
+            "task": "Inspección de bombas de lubricante",
+            "deadline": "2025-03-01",
+            "progress": "80%",
+            "priority": "Media"
+        }
+    ],
+    "table3": [
+        {
+            "analysis": "Análisis de viscosidad",
+            "result": "Aprobado",
+            "analysisDate": "2025-01-10"
+        },
+        {
+            "analysis": "Prueba de contaminación",
+            "result": "Pendiente",
+            "analysisDate": "2025-01-15"
+        }
+    ]
+}

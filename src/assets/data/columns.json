@@ -1,0 +1,52 @@
+{
+    "table1": [
+        {
+            "header": "ID Incidente",
+            "accessor": "incidentId"
+        },
+        {
+            "header": "Descripción",
+            "accessor": "description"
+        },
+        {
+            "header": "Fecha Reportada",
+            "accessor": "reportedDate"
+        },
+        {
+            "header": "Estado",
+            "accessor": "status"
+        }
+    ],
+    "table2": [
+        {
+            "header": "Tarea",
+            "accessor": "task"
+        },
+        {
+            "header": "Fecha Límite",
+            "accessor": "deadline"
+        },
+        {
+            "header": "Progreso",
+            "accessor": "progress"
+        },
+        {
+            "header": "Prioridad",
+            "accessor": "priority"
+        }
+    ],
+    "table3": [
+        {
+            "header": "Análisis",
+            "accessor": "analysis"
+        },
+        {
+            "header": "Resultado",
+            "accessor": "result"
+        },
+        {
+            "header": "Fecha de Análisis",
+            "accessor": "analysisDate"
+        }
+    ]
+}
