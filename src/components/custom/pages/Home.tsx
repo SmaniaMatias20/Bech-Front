@@ -4,16 +4,11 @@ import columnsData from '../../../assets/data/columns.json';
 import tableData from '../../../assets/data/data.json';
 import GenericTable from "../GenericTable";
 import { AlertCircle, CheckCircle, Droplet, Wrench } from "lucide-react";
-// import { SidebarProvider, SidebarTrigger } from "../../ui/sidebar";
-// import { AppSidebar } from "../AppSidebar";
 
 const Home: React.FC = () => {
     return (
-        // <SidebarProvider>
-        //     <AppSidebar />
-        <main>
-            {/* <SidebarTrigger /> */}
-            <section className="flex flex-wrap justify-around gap-6 p-8">
+        <main className="flex flex-col w-full">
+            <section className="flex gap-6 p-8 justify-center">
                 {/* Tarjeta de Incidentes */}
                 <ColorCard
                     bgColor="from-red-300 to-white"
@@ -55,7 +50,7 @@ const Home: React.FC = () => {
                     value2={40}
                 />
             </section>
-            <section className="flex flex-col bg-gray-200 p-8 space-y-12">
+            <section className="flex flex-col bg-gray-200 gap-6 p-8">
                 {/* Tabla de Incidentes de Lubricación */}
                 <div>
                     <GenericTable columns={columnsData.table1} data={tableData.table1} />
@@ -72,7 +67,6 @@ const Home: React.FC = () => {
                 </div>
             </section>
         </main>
-        // </SidebarProvider>
     );
 };
 

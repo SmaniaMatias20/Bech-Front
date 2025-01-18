@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
 
 import {
     Sidebar,
@@ -9,7 +9,7 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 // Menu items.
 const items = [
@@ -38,11 +38,11 @@ const items = [
         url: "#",
         icon: Settings,
     },
-]
+];
 
 export function AppSidebar() {
     return (
-        <Sidebar className="bg-white shadow-lg rounded-lg">
+        <Sidebar className="bg-white shadow-lg rounded-lg fixed top-0 left-0 h-full z-50">
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel className="text-gray-600 font-semibold text-lg mb-4">BechSud</SidebarGroupLabel>
@@ -51,7 +51,10 @@ export function AppSidebar() {
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
-                                        <a href={item.url} className="flex items-center p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                                        <a
+                                            href={item.url}
+                                            className="flex items-center p-2 rounded-md text-gray-700 hover:bg-gray-100"
+                                        >
                                             <item.icon className="w-5 h-5 mr-3" />
                                             <span className="text-sm">{item.title}</span>
                                         </a>
@@ -63,5 +66,5 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
         </Sidebar>
-    )
+    );
 }
