@@ -15,7 +15,7 @@ const GenericTable = <T,>({ columns, data }: GenericTableProps<T>) => {
         <div className="w-full max-w-4xl mx-auto overflow-x-auto shadow-lg rounded-xl">
             <div className="overflow-x-auto">
                 <Table className="min-w-full table-auto bg-white">
-                    <TableHeader className="bg-gray-300 border-b">
+                    <TableHeader className="bg-gray-300">
                         <TableRow>
                             {columns.map((column, index) => (
                                 <TableCell

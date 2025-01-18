@@ -3,12 +3,16 @@ import ColorCard from "../ColorCard";
 import columnsData from '../../../assets/data/columns.json';
 import tableData from '../../../assets/data/data.json';
 import GenericTable from "../GenericTable";
-
 import { AlertCircle, CheckCircle, Droplet, Wrench } from "lucide-react";
+// import { SidebarProvider, SidebarTrigger } from "../../ui/sidebar";
+// import { AppSidebar } from "../AppSidebar";
 
 const Home: React.FC = () => {
     return (
+        // <SidebarProvider>
+        //     <AppSidebar />
         <main>
+            {/* <SidebarTrigger /> */}
             <section className="flex flex-wrap justify-around gap-6 p-8">
                 {/* Tarjeta de Incidentes */}
                 <ColorCard
@@ -68,6 +72,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
         </main>
+        // </SidebarProvider>
     );
 };
 
