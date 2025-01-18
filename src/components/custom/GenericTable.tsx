@@ -15,12 +15,12 @@ const GenericTable = <T,>({ columns, data }: GenericTableProps<T>) => {
         <div className="w-full max-w-4xl mx-auto overflow-x-auto shadow-lg rounded-xl">
             <div className="overflow-x-auto">
                 <Table className="min-w-full table-auto bg-white">
-                    <TableHeader className="bg-gray-200">
+                    <TableHeader className="bg-gray-300 border-b">
                         <TableRow>
                             {columns.map((column, index) => (
                                 <TableCell
                                     key={column.accessor}
-                                    className={`px-4 py-2 font-medium text-gray-600 ${index === 0 ? 'w-1/4' : 'w-1/6'} sm:w-1/4 md:w-1/6 lg:w-1/4`}
+                                    className={`px-4 py-2 font-medium text-gray-600 ${index === 0 ? 'w-1/2' : 'w-1/6'}`}
                                 >
                                     {column.header}
                                 </TableCell>
@@ -33,7 +33,7 @@ const GenericTable = <T,>({ columns, data }: GenericTableProps<T>) => {
                                 {columns.map((column, columnIndex) => (
                                     <TableCell
                                         key={column.accessor}
-                                        className={`px-4 py-2 text-left text-gray-800 ${columnIndex === 0 ? 'w-1/4' : 'w-1/6'} sm:w-1/4 md:w-1/6 lg:w-1/4`}
+                                        className={`px-4 py-2 text-left text-gray-800 ${columnIndex === 0 ? 'w-1/2' : 'w-1/6'}`}
                                     >
                                         {String((row as any)[column.accessor])}
                                     </TableCell>

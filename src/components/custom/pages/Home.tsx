@@ -15,7 +15,7 @@ const Home: React.FC = () => {
                     bgColor="from-red-300 to-white"
                     fgColor="text-red-700"
                     title="Incidentes"
-                    subTittle="Abiertos"
+                    subTitle="Abiertos"
                     Icon={AlertCircle}
                     value1={5}
                     value2={20}
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
                     bgColor="from-yellow-300 to-white"
                     fgColor="text-yellow-700"
                     title="Tareas"
-                    subTittle="Vencidas"
+                    subTitle="Vencidas"
                     Icon={CheckCircle}
                     value1={12}
                     value2={50}
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
                     bgColor="from-green-300 to-white"
                     fgColor="text-green-700"
                     title="Aceite"
-                    subTittle="En progreso"
+                    subTitle="En progreso"
                     Icon={Droplet}
                     value1={8}
                     value2={30}
@@ -45,13 +45,13 @@ const Home: React.FC = () => {
                     bgColor="from-blue-300 to-white"
                     fgColor="text-blue-700"
                     title="Equipos"
-                    subTittle="Componentes"
+                    subTitle="Componentes"
                     Icon={Wrench}
                     value1={15}
                     value2={40}
                 />
             </section>
-            <section className="flex flex-col bg-gray-300 p-8 space-y-12">
+            <section className="flex flex-col bg-gray-200 p-8 space-y-12">
                 {/* Tabla de Incidentes de Lubricación */}
                 <div>
                     <GenericTable columns={columnsData.table1} data={tableData.table1} />
