@@ -1,14 +1,6 @@
 import React from 'react';
 import CardSector from './CardSector';
-
-const sectors = [
-    { title: 'Línea 4', time: 31, tasks: 44, alerts: 0 },
-    { title: 'Línea 1', time: 0, tasks: 0, alerts: 0 },
-    { title: 'Línea 2', time: 0, tasks: 0, alerts: 0 },
-    { title: 'Línea 3', time: 0, tasks: 0, alerts: 0 },
-    { title: 'Línea 5', time: 0, tasks: 0, alerts: 0 },
-];
-
+import sectors from '../../assets/data/sectors.json';
 
 interface SectorsSectionProps {
     title: string;
