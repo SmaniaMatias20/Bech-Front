@@ -7,7 +7,7 @@ interface CardColorSectionProps {
 
 const CardColorSection: React.FC<CardColorSectionProps> = ({ title }) => {
     return (
-        <section className="flex flex-col p-2">
+        <section className="flex flex-col p-4">
             <h2 className="font-bold border-b-2 border-gray-300 pb-2">{title}</h2>
             <div className="flex flex-wrap justify-between p-2 rounded-xl">
                 {/* Tarjeta de Incidentes */}
