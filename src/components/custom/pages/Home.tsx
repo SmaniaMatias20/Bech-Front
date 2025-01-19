@@ -5,12 +5,14 @@ import React from "react";
 // import GenericTable from "../GenericTable";
 import SectorsSection from "../SectorsSection";
 import CardSection from "../CardColorSection";
+import InfoSection from "../InfoSection";
 
 const Home: React.FC = () => {
     return (
-        <main className="flex flex-col w-full">
+        <main className="flex flex-col w-full bg-gray-100">
             <CardSection title="Quilmes / Cerveceria Quilmes" />
             <SectorsSection title="Sectores" />
+            <InfoSection title="Info" />
 
         </main>
     );
