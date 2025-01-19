@@ -11,7 +11,7 @@ interface CardProps {
     value2: number;
 }
 
-const GenericCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Icon, value1, value2 }) => {
+const ColorCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Icon, value1, value2 }) => {
     return (
         <div
             className={`rounded-lg shadow-md p-6 flex gap-10 items-center bg-gradient-to-r ${bgColor} rounded-xl shadow-2xl`}
@@ -33,4 +33,4 @@ const GenericCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, I
     );
 };
 
-export default GenericCard;
+export default ColorCard;

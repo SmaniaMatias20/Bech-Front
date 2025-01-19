@@ -1,70 +1,18 @@
+
 import React from "react";
-import ColorCard from "../ColorCard";
-import columnsData from '../../../assets/data/columns.json';
-import tableData from '../../../assets/data/data.json';
-import GenericTable from "../GenericTable";
-import { AlertCircle, CheckCircle, Droplet, Wrench } from "lucide-react";
+// import columnsData from '../../../assets/data/columns.json';
+// import tableData from '../../../assets/data/data.json';
+// import GenericTable from "../GenericTable";
+import SectorList from "../SectorList";
+import SectionCard from "../SectionCard";
 
 const Home: React.FC = () => {
     return (
         <main className="flex flex-col w-full">
-            <section className="flex gap-6 p-8 justify-center">
-                {/* Tarjeta de Incidentes */}
-                <ColorCard
-                    bgColor="from-red-300 to-white"
-                    fgColor="text-red-700"
-                    title="Incidentes"
-                    subTitle="Abiertos"
-                    Icon={AlertCircle}
-                    value1={5}
-                    value2={20}
-                />
-                {/* Tarjeta de Tareas */}
-                <ColorCard
-                    bgColor="from-yellow-300 to-white"
-                    fgColor="text-yellow-700"
-                    title="Tareas"
-                    subTitle="Vencidas"
-                    Icon={CheckCircle}
-                    value1={12}
-                    value2={50}
-                />
-                {/* Tarjeta de Análisis de Aceite */}
-                <ColorCard
-                    bgColor="from-green-300 to-white"
-                    fgColor="text-green-700"
-                    title="Aceite"
-                    subTitle="En progreso"
-                    Icon={Droplet}
-                    value1={8}
-                    value2={30}
-                />
-                {/* Tarjeta de Equipos */}
-                <ColorCard
-                    bgColor="from-blue-300 to-white"
-                    fgColor="text-blue-700"
-                    title="Equipos"
-                    subTitle="Componentes"
-                    Icon={Wrench}
-                    value1={15}
-                    value2={40}
-                />
-            </section>
-            <section className="flex flex-col bg-gray-200 gap-6 p-8">
-                {/* Tabla de Incidentes de Lubricación */}
-                <div>
-                    <GenericTable columns={columnsData.table1} data={tableData.table1} />
-                </div>
-
-                {/* Tabla de Tareas de Mantenimiento */}
-                <div>
-                    <GenericTable columns={columnsData.table2} data={tableData.table2} />
-                </div>
-
-                {/* Tabla de Análisis de Aceites */}
-                <div>
-                    <GenericTable columns={columnsData.table3} data={tableData.table3} />
-                </div>
+            <SectionCard title="Quilmes / Cerveceria Quilmes" />
+            <section>
+                <h2>Sectores</h2>
+                <SectorList />
             </section>
         </main>
     );
