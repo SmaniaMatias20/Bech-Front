@@ -10,7 +10,7 @@ interface CardSectorProps {
 
 const CardSector: React.FC<CardSectorProps> = ({ title, time, tasks, alerts }) => {
     return (
-        <div className="w-full h-24 flex flex-col justify-center gap-4 bg-white rounded-xl shadow-sm p-2 border-2 border-gray-300">
+        <div className="w-full h-24 flex flex-col justify-center gap-4 bg-white rounded-xl shadow-sm p-2 border-2 border-gray-100">
             {/* Título */}
             <h3 className="text-sm text-left font-medium text-gray-700">{title}</h3>
 

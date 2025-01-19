@@ -14,7 +14,7 @@ const SectorsSection: React.FC<SectorsSectionProps> = ({ title }) => {
                 <h2 className='text-2xl text-gray-500'>{title}</h2>
                 <Button className='bg-sky-800 text-white rounded-xl'>Explorar sectores</Button>
             </div>
-            <div className="flex border-2 border-gray-300 rounded-xl p-4 gap-4 overflow-x-auto">
+            <div className="flex border-2 border-gray-100 rounded-xl p-4 gap-4 overflow-x-auto">
                 {sectors.map((sector) => (
                     <CardSector
                         title={sector.title}
