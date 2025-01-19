@@ -17,14 +17,14 @@ const ColorCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Ico
             className={`flex p-6 justify-between items-center bg-gradient-to-r ${bgColor} rounded-xl shadow-2xl`}
         >
 
-            <Icon className={`flex items-center justify-center w-12 h-12 rounded-full shadow-md ${fgColor}`} />
+            <Icon className={`flex items-center justify-center w-12 h-12 ${fgColor}`} />
 
             <div className={`flex flex-col`}>
                 <span className="text-lg text-center text-gray-800">{title}</span>
                 <div className="flex items-center mt-2">
                     <div className="flex flex-col items-center mr-4">
-                        <span className={`text-xs ${fgColor}`}>{subTitle}</span>
                         <span className={`text-sm font-bold ${fgColor}`}>{value1}</span>
+                        <span className={`text-xs ${fgColor}`}>{subTitle}</span>
                     </div>
                     <span className={`text-4xl font-bold ${fgColor}`}>{value2}</span>
                 </div>

@@ -1,4 +1,4 @@
-import { AlertCircle, CheckCircle, Droplet, Wrench } from "lucide-react";
+import { AlertCircle, CheckSquare, Droplet, Wrench } from "lucide-react";
 import ColorCard from './ColorCard';
 
 interface SectionCardProps {
@@ -18,8 +18,8 @@ const SectionCard: React.FC<SectionCardProps> = ({ title }) => {
                         title="Incidentes"
                         subTitle="Abiertos"
                         Icon={AlertCircle}
-                        value1={5}
-                        value2={20}
+                        value1={0}
+                        value2={32}
                     />
                 </div>
                 {/* Tarjeta de Tareas */}
@@ -29,9 +29,9 @@ const SectionCard: React.FC<SectionCardProps> = ({ title }) => {
                         fgColor="text-yellow-700"
                         title="Tareas"
                         subTitle="Vencidas"
-                        Icon={CheckCircle}
-                        value1={12}
-                        value2={50}
+                        Icon={CheckSquare}
+                        value1={44}
+                        value2={44}
                     />
                 </div>
                 {/* Tarjeta de Análisis de Aceite */}
@@ -42,8 +42,8 @@ const SectionCard: React.FC<SectionCardProps> = ({ title }) => {
                         title="Aceite"
                         subTitle="En progreso"
                         Icon={Droplet}
-                        value1={8}
-                        value2={30}
+                        value1={1}
+                        value2={4}
                     />
                 </div>
                 {/* Tarjeta de Equipos */}
@@ -54,8 +54,8 @@ const SectionCard: React.FC<SectionCardProps> = ({ title }) => {
                         title="Equipos"
                         subTitle="Componentes"
                         Icon={Wrench}
-                        value1={15}
-                        value2={40}
+                        value1={791}
+                        value2={236}
                     />
                 </div>
             </div>
