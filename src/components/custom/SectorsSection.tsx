@@ -1,5 +1,5 @@
 import React from 'react';
-import SectorCard from './SectorCard';
+import CardSector from './CardSector';
 
 const sectors = [
     { title: 'Línea 4', time: 31, tasks: 44, alerts: 0 },
@@ -9,13 +9,18 @@ const sectors = [
     { title: 'Línea 5', time: 0, tasks: 0, alerts: 0 },
 ];
 
-const SectorList: React.FC = () => {
+
+interface SectorsSectionProps {
+    title: string;
+}
+
+const SectorsSection: React.FC<SectorsSectionProps> = ({ title }) => {
     return (
-        <div className="p-4 border-2 border-gray-300 rounded-xl">
-            <div className="flex gap-4 overflow-x-auto">
-                {sectors.map((sector, index) => (
-                    <SectorCard
-                        key={index}
+        <section className="">
+            <h2>{title}</h2>
+            <div className="flex border-2 border-gray-300 rounded-xl p-4 gap-4 overflow-x-auto">
+                {sectors.map((sector) => (
+                    <CardSector
                         title={sector.title}
                         time={sector.time}
                         tasks={sector.tasks}
@@ -23,8 +28,8 @@ const SectorList: React.FC = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
-export default SectorList;
+export default SectorsSection;

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Clock, CheckSquare, AlertTriangle } from 'lucide-react';
 
-interface SectorCardProps {
+interface CardSectorProps {
     title: string;
     time: number;
     tasks: number;
     alerts: number;
 }
 
-const SectorCard: React.FC<SectorCardProps> = ({ title, time, tasks, alerts }) => {
+const CardSector: React.FC<CardSectorProps> = ({ title, time, tasks, alerts }) => {
     return (
         <div className="w-full h-24 flex flex-col justify-center gap-4 bg-white rounded-xl shadow-sm p-2 border-2 border-gray-300">
             {/* Título */}
@@ -33,4 +33,4 @@ const SectorCard: React.FC<SectorCardProps> = ({ title, time, tasks, alerts }) =
     );
 };
 
-export default SectorCard;
+export default CardSector;

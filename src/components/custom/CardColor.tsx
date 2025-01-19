@@ -1,7 +1,7 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
 
-interface CardProps {
+interface CardColorProps {
     bgColor: string;
     fgColor: string;
     title: string;
@@ -11,7 +11,7 @@ interface CardProps {
     value2: number;
 }
 
-const ColorCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Icon, value1, value2 }) => {
+const CardColor: React.FC<CardColorProps> = ({ bgColor, fgColor, title, subTitle, Icon, value1, value2 }) => {
     return (
         <div
             className={`flex p-6 justify-between items-center bg-gradient-to-r ${bgColor} rounded-xl shadow-2xl`}
@@ -33,4 +33,4 @@ const ColorCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Ico
     );
 };
 
-export default ColorCard;
+export default CardColor;
