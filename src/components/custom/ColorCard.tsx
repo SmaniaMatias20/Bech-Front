@@ -14,12 +14,12 @@ interface CardProps {
 const ColorCard: React.FC<CardProps> = ({ bgColor, fgColor, title, subTitle, Icon, value1, value2 }) => {
     return (
         <div
-            className={`rounded-lg shadow-md p-6 flex gap-10 items-center bg-gradient-to-r ${bgColor} rounded-xl shadow-2xl`}
+            className={`flex p-6 justify-between items-center bg-gradient-to-r ${bgColor} rounded-xl shadow-2xl`}
         >
 
             <Icon className={`flex items-center justify-center w-12 h-12 rounded-full shadow-md ${fgColor}`} />
 
-            <div className={`ml-4 flex flex-col justify-center`}>
+            <div className={`flex flex-col`}>
                 <span className="text-lg text-center text-gray-800">{title}</span>
                 <div className="flex items-center mt-2">
                     <div className="flex flex-col items-center mr-4">

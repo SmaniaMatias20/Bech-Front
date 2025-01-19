@@ -7,49 +7,57 @@ interface SectionCardProps {
 
 const SectionCard: React.FC<SectionCardProps> = ({ title }) => {
     return (
-        <section className="flex flex-col gap-6 p-8">
-            <h2>{title}</h2>
-            <div className="flex flex-wrap gap-6 justify-between p-4 border-2 border-gray-300 rounded-xl">
+        <section className="flex flex-col p-2">
+            <h2 className="font-bold border-b-2 border-gray-300 pb-2">{title}</h2>
+            <div className="flex flex-wrap justify-between p-2 rounded-xl">
                 {/* Tarjeta de Incidentes */}
-                <ColorCard
-                    bgColor="from-red-300 to-white"
-                    fgColor="text-red-700"
-                    title="Incidentes"
-                    subTitle="Abiertos"
-                    Icon={AlertCircle}
-                    value1={5}
-                    value2={20}
-                />
+                <div className="w-full sm:w-1/2 md:w-1/4 p-2">
+                    <ColorCard
+                        bgColor="from-red-300 to-white"
+                        fgColor="text-red-700"
+                        title="Incidentes"
+                        subTitle="Abiertos"
+                        Icon={AlertCircle}
+                        value1={5}
+                        value2={20}
+                    />
+                </div>
                 {/* Tarjeta de Tareas */}
-                <ColorCard
-                    bgColor="from-yellow-300 to-white"
-                    fgColor="text-yellow-700"
-                    title="Tareas"
-                    subTitle="Vencidas"
-                    Icon={CheckCircle}
-                    value1={12}
-                    value2={50}
-                />
+                <div className="w-full sm:w-1/2 md:w-1/4 p-2">
+                    <ColorCard
+                        bgColor="from-yellow-300 to-white"
+                        fgColor="text-yellow-700"
+                        title="Tareas"
+                        subTitle="Vencidas"
+                        Icon={CheckCircle}
+                        value1={12}
+                        value2={50}
+                    />
+                </div>
                 {/* Tarjeta de Análisis de Aceite */}
-                <ColorCard
-                    bgColor="from-green-300 to-white"
-                    fgColor="text-green-700"
-                    title="Aceite"
-                    subTitle="En progreso"
-                    Icon={Droplet}
-                    value1={8}
-                    value2={30}
-                />
+                <div className="w-full sm:w-1/2 md:w-1/4 p-2">
+                    <ColorCard
+                        bgColor="from-green-300 to-white"
+                        fgColor="text-green-700"
+                        title="Aceite"
+                        subTitle="En progreso"
+                        Icon={Droplet}
+                        value1={8}
+                        value2={30}
+                    />
+                </div>
                 {/* Tarjeta de Equipos */}
-                <ColorCard
-                    bgColor="from-blue-300 to-white"
-                    fgColor="text-blue-700"
-                    title="Equipos"
-                    subTitle="Componentes"
-                    Icon={Wrench}
-                    value1={15}
-                    value2={40}
-                />
+                <div className="w-full sm:w-1/2 md:w-1/4 p-2">
+                    <ColorCard
+                        bgColor="from-blue-300 to-white"
+                        fgColor="text-blue-700"
+                        title="Equipos"
+                        subTitle="Componentes"
+                        Icon={Wrench}
+                        value1={15}
+                        value2={40}
+                    />
+                </div>
             </div>
         </section>
     );
