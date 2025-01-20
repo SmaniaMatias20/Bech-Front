@@ -25,12 +25,12 @@ Este proyecto es una prueba técnica que destaca habilidades en desarrollo front
   
 ## Imagenes 
 
-![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img1.png)  
+![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img1.jpeg)  
 
-![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img2.png)  
+![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img2.jpeg)
   
-![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img3.png) 
+![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img3.jpeg) 
 
-![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img4.png)  
+![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img4.jpeg)  
 
 
