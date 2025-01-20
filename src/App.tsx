@@ -1,14 +1,12 @@
 import './App.css'
-import { Button } from './components/ui/button'
+import Home from './components/custom/pages/Home';
 
 function App() {
 
   return (
     <div>
-      <h1>Hello, World!</h1>
-      <Button variant="destructive" size="lg">Delete</Button>
+      <Home />
     </div>
-
   )
 }
 
