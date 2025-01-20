@@ -16,7 +16,7 @@ const SectorsSection: React.FC<SectorsSectionProps> = ({ title }) => {
                     Explorar sectores
                 </Button>
             </div>
-            {/* Apply responsive flex direction */}
+
             <div className="flex bg-white border-2 border-gray-200 rounded-xl p-4 gap-4 overflow-x-auto md:flex-row flex-col">
                 {sectors.map((sector, index) => (
                     <CardSector
