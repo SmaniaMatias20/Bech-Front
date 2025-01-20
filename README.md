@@ -13,16 +13,16 @@ Este proyecto es una prueba técnica que destaca habilidades en desarrollo front
 - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
   Biblioteca para crear interfaces de usuario.  
 
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)  
+  Lenguaje de programación tipado que mejora la confiabilidad y escalabilidad del código.
+  
 - ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  
   Framework de utilidades para estilos rápidos y consistentes.  
 
 - ![ShadCN](https://img.shields.io/badge/ShadCN-20232A?style=for-the-badge&logo=shadcn&logoColor=white)  
   Sistema de componentes para mejorar la productividad y mantener un diseño consistente.  
 
-- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)  
-  Lenguaje de programación tipado que mejora la confiabilidad y escalabilidad del código.  
   
-
 ## Imagenes 
 
 ![](https://github.com/SmaniaMatias20/Bech-Front/blob/master/public/img/img1.png)  
