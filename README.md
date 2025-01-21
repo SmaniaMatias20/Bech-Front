@@ -1,4 +1,4 @@
-# Proyecto de Prueba Técnica - Frontend con React, Tailwind, ShadCN y TypeScript  
+# Proyecto de Prueba Técnica - Frontend  
 
 Este proyecto es una prueba técnica que destaca habilidades en desarrollo frontend utilizando tecnologías modernas como **React**, **Tailwind CSS**, **ShadCN** y **TypeScript**.  
 
